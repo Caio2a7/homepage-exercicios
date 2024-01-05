@@ -28,6 +28,30 @@
         <hr>
     </div>
     <div class="bcc-main-content">
+        <div class="calculator-box">
+            <form id="notas-calculadora">
+                <fieldset>
+                    <legend>Nota de Corte Calculadora</legend>
+                    <label for="tri_linguagens">Linguagens, Códigos e suas Tecnologias: </label>
+                    <input id="linguagens-input" type="number" placeholder="TRI"><br><br>
+                
+                    <label for="tri_exatas">Matemática e suas Tecnologias: </label>
+                    <input id="exatas-input" type="number" placeholder="TRI"><br><br>
+
+                    <label for="tri_humanas">Ciências Humanas e suas Tecnologias: </label>
+                    <input id="humanas-input" type="number" placeholder="TRI"><br><br>
+                
+                    <label for="tri_naturezas">Ciências da Natureza e suas Tecnologias: </label>
+                    <input id="naturezas-input" type="number" placeholder="TRI"><br><br>
+
+                    <label for="tri_naturezas">Prova de Redação: </label>
+                    <input id="naturezas-input" type="number" placeholder="TRI"><br><br>
+
+                    <button type="button" onclick="calcular()">Calcular</button>
+                </fieldset>
+            </form>
+            <p id="calc-result"></p>
+        </div>
         <main>
             <section class="sec-main-content">
                 <h2><strong>Apresentação e História</strong></h2>
@@ -81,30 +105,6 @@
                          <p>O curso de Bacharelado em Ciências da Computação tem por objetivo a formação teórica e prática em computação ou informática.<br><br>
                             A formação do aluno abrange a compreensão do campo científico da computação que permitirá a sua aplicação na solução de
                             problemas da sociedade e no desenvolvimento de conhecimento e tecnologias que permitam a evolução da computação.</p>  
-                    </div>
-                    <div class="calculator-box">
-                        <form id="notas-calculadora">
-                            <fieldset>
-                                <legend>Nota de Corte Calculadora</legend>
-                                <label for="tri_linguagens">Linguagens, Códigos e suas Tecnologias: </label>
-                                <input id="tri-linguagens-input" type="number" placeholder="TRI"><br><br>
-                            
-                                <label for="tri_exatas">Matemática e suas Tecnologias: </label>
-                                <input id="tri-exatas-input" type="number" placeholder="TRI"><br><br>
-
-                                <label for="tri_humanas">Ciências Humanas e suas Tecnologias: </label>
-                                <input id="tri-humanas-input" type="number" placeholder="TRI"><br><br>
-                            
-                                <label for="tri_naturezas">Ciências da Natureza e suas Tecnologias: </label>
-                                <input id="tri-naturezas-input" type="number" placeholder="TRI"><br><br>
-
-                                <label for="tri_naturezas">Prova de Redação: </label>
-                                <input id="tri-naturezas-input" type="number" placeholder="TRI"><br><br>
-
-                                <button type="button" onclick="calcular()">Calcular</button>
-                            </fieldset>
-                        </form>
-                        <p id="calc-result"></p>
                     </div>
                     <hr>
                 </div>

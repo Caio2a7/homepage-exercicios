@@ -103,17 +103,30 @@ a{
     justify-content: center;
 }
 
-.calculator-box form{
-    display: flex;
-    justify-content: center;
-}
-.calculator-box fieldset{
+
+.calculator-box form {
     background-color: #113272;
-    text-decoration: 0px;
+    width: 80%;
 }
-.calculator-box label, input{
-    display: flex;
-    justify-content: flex-end;
+
+.calculator-box fieldset {
+    border: none;
+}
+
+.calculator-box label {
+    display: inline-block;
+    font-size: 20px;
+    width: 40%;
+}
+
+.calculator-box input {
+    display: inline-block;
+    flex: 1;
+    padding: 3px;
+}
+
+.calculator-box button{
+    background-color: #113272;
 }
 
 .bcc-footer-conteiner footer{
@@ -122,9 +135,11 @@ a{
     align-items: center;
     background-color: #113272;
 }
+
 .footer-sec{
     margin: 20px;
 }
+
 .nav-items li:hover{
     animation-duration: 0.2s;
     transition: 0.3s all ease-in-out;
