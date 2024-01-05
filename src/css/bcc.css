@@ -103,17 +103,28 @@ a{
     justify-content: center;
 }
 
-.calculator-box{
+.calculator-box form{
     display: flex;
     justify-content: center;
 }
-
-
-.bcc-footer-conteiner{
-    padding: 20px;
+.calculator-box fieldset{
     background-color: #113272;
+    text-decoration: 0px;
+}
+.calculator-box label, input{
+    display: flex;
+    justify-content: flex-end;
 }
 
+.bcc-footer-conteiner footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #113272;
+}
+.footer-sec{
+    margin: 20px;
+}
 .nav-items li:hover{
     animation-duration: 0.2s;
     transition: 0.3s all ease-in-out;
