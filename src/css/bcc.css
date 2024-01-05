@@ -68,22 +68,35 @@ a{
     padding: 20px;
     background: url("../img/imagem_de_fundo.png");
 }
+.sec-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 2%;
+}
+
 .sec-main-content h2{
     text-decoration: underline;
     text-decoration-thickness: 1px;
 }
 
 .content-card{
-    display: flex;
     padding: 2%;
-    margin: 20px;
+    margin: 5%;
     background-color: #1A1414;
 
 }
 
 .content-card p{
-    padding: 30px;
-    font-size: 30px;
+    padding: 5%;
+    font-size: 34px;
+}
+
+.content-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bcc-footer-conteiner{
