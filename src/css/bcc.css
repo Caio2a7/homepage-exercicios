@@ -1,6 +1,9 @@
 /* ESTILOS GLOBAIS*/
 * {
-    font-family: Arial, sans-serif;
+    font-family: "Raleway Thin";
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
     color: white;
     margin: 0;
     padding: 0;
@@ -62,27 +65,28 @@ a{
 
 /*ESTILOS MAIN*/
 .bcc-main-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     background: url("../img/imagem_de_fundo.png");
 }
 .sec-main-content{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    margin: 2%;
+    align-items: flex-start;
+    position: relative;
+    margin: 2% 0%;
 }
 
 .sec-main-content h2{
     text-decoration: underline;
     text-decoration-thickness: 1px;
+    margin: 0 5.5%;
+    top: 5vw; /* Ajuste o valor conforme necessário */
+    position: relative;
+    font-size: 36px;
 }
 
 .content-card{
-    padding: 2%;
+    padding: -2%;
     margin: 5%;
     background-color: #1A1414;
 
@@ -90,7 +94,7 @@ a{
 
 .content-card p{
     padding: 5%;
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .content-images{
@@ -110,7 +114,7 @@ a{
     transform: scale(1.10);
 }
 .nav-items li a:hover{
-    color: #7592cc;
+    color: #8aa9e7;
 }
 
 /* Media query para telas menores */
@@ -124,9 +128,6 @@ a{
     .header-title{
         padding: 10px;
     }
-    .header-nav{
-        margin: -30px 50px;
-    }
     .nav-items li {
         display: block;
         margin: -5px;
@@ -134,6 +135,12 @@ a{
 
     .bcc-main-content {
         padding: 10px;
+    }
+    .content-card{
+        width: 80%;
+    }
+    .content-images img{
+        width: 98%;
     }
     .bcc-main-content p, img, h2{
         padding: 5px;
