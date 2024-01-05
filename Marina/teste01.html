@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="teste01.css"/>
+    <title>Calculador de média</title>
+</header>
+<body>
+    <header>
+        <h1>Calculador de média</h1>
+    </header>
+    <section>
+        <div id="notas">
+            <div id="sem1">
+                <p> Nota do 1&deg; bimestre: <br/>
+                    <input type="number" name="sem1" id="1bi" min="0" max="100"/>
+                </p>
+                <p> Nota do 2&deg; bimestre: <br/>
+                    <input type="number" name="sem1" id="2bi" min="0" max="100"/>
+                </p>
+            </div>
+            <div id="sem2">
+                <p> Nota do 3&deg; bimestre:<br/>
+                    <input type="number" name="sem2" id="3bi" min="0" max="100"/>
+                </p>
+                <p> Nota do 4&deg; bimestre: <br/>
+                    <input type="number" name="sem2" id="4bi" min="0" max="100"/>
+                </p>
+            </div>
+        </div>
+        <div id="calculos">
+            <p> Calcular média: <br/>
+                <input type="Button" value="Calcular" onclick="media()"/>
+            </p>
+            <div id="resMedia" class="resultados">
+
+            </div>
+            <p> Calcular quanto precisa no segundo semestre: <br/>
+                <input type="button" value="Calcular" onclick="sem2()"/>
+            </p>
+            <div id="resSem2" class="resultados">
+                
+            </div>
+            <p> Calcular quanto precisa no quarto bimestre: <br/>
+                <input type="button" value="Calcular" onclick="bi4()"/>
+            </p>
+            <div id="resBi4" class="resultados">
+                
+            </div>
+        </div>
+    </section>
+    <script src="teste01.js"></script>
+    <footer>
+        <p>&copy;MarinaLeite</p>
+    </footer>
+</body>
+</html>

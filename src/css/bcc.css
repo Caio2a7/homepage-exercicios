@@ -1,0 +1,133 @@
+/* ESTILOS GLOBAIS*/
+* {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* ESTILOS HEADER*/
+.bcc-header-conteiner {
+    position: relative; /* Para usar como referência para a posição absoluta */
+    padding: 10px;
+    background-color: #113272;
+}
+.bcc-header-conteiner h1{
+    padding: 20px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-nav {
+    position: absolute;
+    width: 58.5%;
+    margin-top: -3.8%;
+    margin-left: 11.6%;
+    padding: 0.8%;
+    background-color: rgba(50, 80, 138, 0.3);
+}
+
+.nav-items {
+    margin: 0 -8px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-items li {
+    padding: 3px 10px 6px 10px;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.bcc-header-conteiner hr{
+    position: absolute;
+    top: 67%;
+    margin-top: -5px;
+    width: 60%;
+    left: 12.5%;
+    border: none;
+    border-top: 1px solid white;
+}
+
+
+
+
+/*ESTILOS MAIN*/
+.bcc-main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: url("../img/imagem_de_fundo.png");
+}
+.sec-main-content h2{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.content-card{
+    display: flex;
+    padding: 2%;
+    margin: 20px;
+    background-color: #1A1414;
+
+}
+
+.content-card p{
+    padding: 30px;
+    font-size: 30px;
+}
+
+.bcc-footer-conteiner{
+    padding: 20px;
+    background-color: #113272;
+}
+
+.nav-items li:hover{
+    animation-duration: 0.2s;
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.10);
+}
+.nav-items li a:hover{
+    color: #7592cc;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 991px) {
+    hr{
+        display: none;
+    }
+    .bcc-header-conteiner {
+        padding: 10px;
+    }
+    .header-title{
+        padding: 10px;
+    }
+    .header-nav{
+        margin: -30px 50px;
+    }
+    .nav-items li {
+        display: block;
+        margin: -5px;
+    }
+
+    .bcc-main-content {
+        padding: 10px;
+    }
+    .bcc-main-content p, img, h2{
+        padding: 5px;
+    }
+
+    .bcc-footer-conteiner {
+        padding: 5px;
+    }
+}
+

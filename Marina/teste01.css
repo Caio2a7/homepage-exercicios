@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(46, 235, 128);
+}
+header{
+    font: normal 20pt Arial;
+    color: white;
+    text-align: center;
+}
+
+/* BRANCO */
+section{
+    background-color: white;
+    border-radius: 15px;
+    font: normal 18pt Arial;
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto;
+}
+div.resultados{
+    font: bold 15pt Arial;
+}
+/* NOTAS */
+div#notas{
+    position: relative;
+    display:flex; /* Deixa as divs filhas uma do lado da outra*/
+    justify-content: center; /* Só funciona c display:flex*/
+}
+div#sem1{
+    position: relative;
+    right: 10px;
+    text-align: center;
+}
+div#sem2{
+    position: relative;
+    left: 10px;
+    text-align: center;
+}
+/* CÁLCULOS */
+div#calculos{
+    text-align: center;
+}
+
+footer{
+    font: normal 16pt Arial;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 :root{
     /*Variáveis de Cores*/
-    --cor-primaria: #EA3075;
+    /* #337ab7 #113272f2*/
+    --cor-primaria: #113272f2;
     --cor-secundaria: #FFE605;
     --cor-terciaria: #17EB88;
     --azul-centaurea: #0262C5;
@@ -26,7 +27,7 @@ header span{
     align-items: center;
 }
 header span h1{
-    margin: 0 20px;
+    margin: 0 30px;
     flex-shrink: 0;
     font-family: var(--font-inter);
     font-size: 40px;
@@ -34,6 +35,7 @@ header span h1{
     font-weight: 80px;
     line-height: normal;
 }
+
 main{
     background: url('../img/imagem_de_fundo.png'), lightgray 10%;
     background-size: cover;
