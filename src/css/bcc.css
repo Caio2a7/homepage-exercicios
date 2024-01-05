@@ -1,6 +1,6 @@
 /* ESTILOS GLOBAIS*/
 * {
-    font-family: "Raleway Thin";
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -33,7 +33,7 @@ a{
     width: 58.5%;
     margin-top: -3.8%;
     margin-left: 11.6%;
-    padding: 0.8%;
+    padding: 0.5% 0.8%;
     background-color: rgba(50, 80, 138, 0.3);
 }
 
@@ -88,7 +88,7 @@ a{
 .content-card{
     padding: -2%;
     margin: 5%;
-    background-color: #1A1414;
+    background-color: rgb(26, 20, 20, 0.5);
 
 }
 
@@ -102,6 +102,12 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+.calculator-box{
+    display: flex;
+    justify-content: center;
+}
+
 
 .bcc-footer-conteiner{
     padding: 20px;
@@ -140,7 +146,7 @@ a{
         width: 80%;
     }
     .content-images img{
-        width: 98%;
+        width: 95%;
     }
     .bcc-main-content p, img, h2{
         padding: 5px;
