@@ -114,13 +114,15 @@
                                     <input id="redacao-input" type="number" placeholder="TRI">
                                     <input id="peso-redacao" type="number" placeholder="PESO"><br><br>
                                 </div>
-                                <button id="botao-submit" type="button" onclick="calcular()">Calcular</button>
+                                <div class="form-row">
+                                    <button id="botao-submit" type="button" onclick="calcular()">Calcular</button>
+                                    <div class="calculator-result">
+                                        <p>Resultado:</p>
+                                        <p id="calc-result"></p>
+                                    </div>
+                                </div>
                             </fieldset>
                         </form>
-                        <div class="calculator-result">
-                            <p>Resultado:</p>
-                            <p id="calc-result"></p>
-                        </div>
                     </div>
                     <hr>
                 </div>

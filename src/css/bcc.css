@@ -122,7 +122,7 @@ hr {
 }
 .calculator-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .calculator-box form {
     display: flex;
@@ -131,7 +131,7 @@ hr {
     background-color: #113272;
     width: 70%;
     border-radius: 2%;
-    margin: 15px;
+    margin: 0 15px 15px;
     border: 2px solid white;
 }
 .form-row{
@@ -141,6 +141,9 @@ hr {
 }
 .calculator-box fieldset {
     border: none;
+}
+.calculator-box legend{
+    font-size: 20px;
 }
 .calculator-box form label {
     background-color: #526fa8;
@@ -165,7 +168,15 @@ hr {
     color: black;
 }
 
-.calculator-box button{
+.calculator-result{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.form-row button{
     font-size: 20px;
     position: relative;
     border: none;
@@ -177,7 +188,15 @@ hr {
     transition: 0.3s all ease-in-out;
 }
 
-
+.calculator-result p{
+    display: inline;
+    margin: 0;
+    font-size: 20px;
+    border: none;
+    padding: 7px;
+    margin: 2%;
+    border-radius: 11%;
+}
 
 
 
