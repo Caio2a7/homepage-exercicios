@@ -6,6 +6,7 @@
     <title>UFRN-Ciências da Computação</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/bcc.css" rel="stylesheet">
+    <script src="js/calculadora.js" defer></script>
 </head>
 <body>
     <div class="bcc-header-conteiner">
@@ -28,30 +29,6 @@
         <hr>
     </div>
     <div class="bcc-main-content">
-        <div class="calculator-box">
-            <form id="notas-calculadora">
-                <fieldset>
-                    <legend>Nota de Corte Calculadora</legend>
-                    <label for="tri_linguagens">Linguagens, Códigos e suas Tecnologias: </label>
-                    <input id="linguagens-input" type="number" placeholder="TRI"><br><br>
-                
-                    <label for="tri_exatas">Matemática e suas Tecnologias: </label>
-                    <input id="exatas-input" type="number" placeholder="TRI"><br><br>
-
-                    <label for="tri_humanas">Ciências Humanas e suas Tecnologias: </label>
-                    <input id="humanas-input" type="number" placeholder="TRI"><br><br>
-                
-                    <label for="tri_naturezas">Ciências da Natureza e suas Tecnologias: </label>
-                    <input id="naturezas-input" type="number" placeholder="TRI"><br><br>
-
-                    <label for="tri_naturezas">Prova de Redação: </label>
-                    <input id="naturezas-input" type="number" placeholder="TRI"><br><br>
-
-                    <button type="button" onclick="calcular()">Calcular</button>
-                </fieldset>
-            </form>
-            <p id="calc-result"></p>
-        </div>
         <main>
             <section class="sec-main-content">
                 <h2><strong>Apresentação e História</strong></h2>
@@ -100,11 +77,47 @@
                     <hr>
                 </div>
                 <h2><strong>Notas de Corte e Calculadora de Pesos</strong></h2>
-                <div class="content-card">
-                    <div class="content-text">
+                <div class="calculator-card">
+                    <div class="calculator-text">
                          <p>O curso de Bacharelado em Ciências da Computação tem por objetivo a formação teórica e prática em computação ou informática.<br><br>
                             A formação do aluno abrange a compreensão do campo científico da computação que permitirá a sua aplicação na solução de
                             problemas da sociedade e no desenvolvimento de conhecimento e tecnologias que permitam a evolução da computação.</p>  
+                    </div>
+                    <div class="calculator-box">
+                        <form id="notas-calculadora">
+                            <fieldset>
+                                <legend>Calculadora Nota de Corte</legend>
+                                <div class="row">
+                                    <label for="linguagens-input">Linguagens, Códigos e suas Tecnologias: </label>
+                                    <input id="linguagens-input" type="number" placeholder="TRI">
+                                    <input id="peso-linguagens" type="number" placeholder="PESO"><br><br>
+                                </div>
+                                <div class="row">
+                                    <label for="exatas-input">Matemática e suas Tecnologias: </label>
+                                    <input id="exatas-input" type="number" placeholder="TRI"><br><br>
+                                </div>
+                                <div class="row">
+                                    <label for="humanas-input">Ciências Humanas e suas Tecnologias: </label>
+                                    <input id="humanas-input" type="number" placeholder="TRI"><br><br>
+                                </div>
+                    
+                                <div class="row">
+                                    <label for="naturezas-input">Ciências da Natureza e suas Tecnologias: </label>
+                                    <input id="naturezas-input" type="number" placeholder="TRI"><br><br>
+                                </div>
+                            
+                                <div class="row">
+                                    <label for="redacao-input">Prova Escrita de Redação: </label>
+                                    <input id="redacao-input" type="number" placeholder="TRI"><br><br>
+                                </div>
+            
+                                <button id="botao-submit" type="button" onclick="calcular()">Calcular</button>
+                            </fieldset>
+                        </form>
+                        <div class="calculator-result">
+                            <p>Resultado:</p>
+                            <p id="calc-result"></p>
+                        </div>
                     </div>
                     <hr>
                 </div>

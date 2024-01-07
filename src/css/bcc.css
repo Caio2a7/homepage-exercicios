@@ -12,6 +12,13 @@
 a{
     text-decoration: none;
 }
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd; 
+  }
+
 /* ESTILOS HEADER*/
 .bcc-header-conteiner {
     position: relative; /* Para usar como referência para a posição absoluta */
@@ -55,7 +62,7 @@ a{
     top: 67%;
     margin-top: -5px;
     width: 60%;
-    left: 12.5%;
+    left: 12.3%;
     border: none;
     border-top: 1px solid white;
 }
@@ -88,13 +95,12 @@ a{
 .content-card{
     padding: -2%;
     margin: 5%;
-    background-color: rgb(26, 20, 20, 0.5);
-
+    background-color: rgb(26, 20, 20, 0.4);
 }
 
-.content-card p{
+.content-text{
     padding: 5%;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .content-images{
@@ -103,31 +109,14 @@ a{
     justify-content: center;
 }
 
-
-.calculator-box form {
-    background-color: #113272;
-    width: 80%;
+/* ESTILOS CALCULADORA*/
+.calculator-card{
+    padding: -2%;
+    margin: 5%;
+    background-color: rgb(26, 20, 20, 0.4);
 }
 
-.calculator-box fieldset {
-    border: none;
-}
 
-.calculator-box label {
-    display: inline-block;
-    font-size: 20px;
-    width: 40%;
-}
-
-.calculator-box input {
-    display: inline-block;
-    flex: 1;
-    padding: 3px;
-}
-
-.calculator-box button{
-    background-color: #113272;
-}
 
 .bcc-footer-conteiner footer{
     display: flex;
@@ -137,6 +126,7 @@ a{
 }
 
 .footer-sec{
+    border: none;
     margin: 20px;
 }
 
@@ -148,7 +138,14 @@ a{
 .nav-items li a:hover{
     color: #8aa9e7;
 }
-
+.calculator-box button:hover{
+    background-color:#0d2350;
+    animation-duration: 0.2s;
+    transform: scale(1.10);
+}
+.calculator-box button:active{
+    background-color: #0070e7;
+}
 /* Media query para telas menores */
 @media screen and (max-width: 991px) {
     hr{
@@ -178,8 +175,5 @@ a{
         padding: 5px;
     }
 
-    .bcc-footer-conteiner {
-        padding: 5px;
-    }
 }
 
