@@ -113,8 +113,71 @@ hr {
 .calculator-card{
     padding: -2%;
     margin: 5%;
+    max-width: 100%;
     background-color: rgb(26, 20, 20, 0.4);
 }
+.calculator-text{
+    padding: 5%;
+    font-size: 20px;
+}
+.calculator-box{
+    display: flex;
+    justify-content: space-between;
+}
+.calculator-box form {
+    display: flex;
+  flex-direction: column;
+    /*Estilos de aparência*/
+    background-color: #113272;
+    width: 70%;
+    border-radius: 2%;
+    margin: 15px;
+    border: 2px solid white;
+}
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.calculator-box fieldset {
+    border: none;
+}
+.calculator-box form label {
+    background-color: #526fa8;
+    border-radius: 3%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    margin: 8px;
+    width: 40%;
+}
+
+.calculator-box form input {
+    flex-grow: 1;
+    font-size: 14px;
+    margin: 10px;
+    position: relative;
+    border-radius: 3%;
+    background-color: white;
+    display: inline-block;
+    padding: 4px;
+    border: none;
+    color: black;
+}
+
+.calculator-box button{
+    font-size: 20px;
+    position: relative;
+    border: none;
+    padding: 7px;
+    margin: 2%;
+    border-radius: 11%;
+    background-color: #526fa8;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+
 
 
 
