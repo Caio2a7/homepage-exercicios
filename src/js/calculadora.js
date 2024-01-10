@@ -33,11 +33,21 @@ function media_ponderada(){
     }
 }
 
-function media(){
-    const triId = ['linguagens', 'exatas', 'humanas', 'naturezas', 'redacao'];
-    const triNotas = triId.map( id => { Number(document.getElementById(`${id}-input`).value); } )
-    const tripesos = triId.map( id => { Number(document.getElementById(`peso-${id}`).value); } )
+function media() {
+    const triValues = ['linguagens', 'exatas', 'humanas', 'naturezas', 'redacao'];
+    const pesoValues = triValues.map(id => Number(document.getElementById(`peso-${id}`).value));
 
-   
-    
+    const notas = triValues.map(id => Number(document.getElementById(`${id}-input`).value));
+    const notasValidas = notas.filter(nota => !isNaN(nota));
+
+    const somaPesos = pesoValues.reduce((acc, peso) => acc + (isNaN(peso) ? 0 : peso), 0);
+    const textResult = document.getElementById("calc-result");
+
+    if (notasValidas.length === notas.length && somaPesos !== 0) {
+        const resultado = triValues.reduce((acc, id, index) => acc + (notas[index] * pesoValues[index]), 0) / somaPesos;
+
+        textResult.innerText = `${resultado.toFixed(2)}`;
+    } else {
+        textResult.innerText = "Preencha corretamente todos os campos!";
+    }
 }
