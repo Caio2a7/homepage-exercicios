@@ -21,59 +21,40 @@ hr {
 
 /* ESTILOS HEADER*/
 .bcc-header-conteiner {
-    position: relative; /* Para usar como referência para a posição absoluta */
-    padding: 10px;
     background-color: #113272;
-}
-
-
-.bcc-header-conteiner h1{
-    padding: 20px;
-    font-size: 25px;
-}
-
-.header-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    width: 58.5%;
-    margin-top: -3.8%;
-    margin-left: 11.6%;
-    padding: 0.5% 0.8%;
-    background-color: rgba(50, 80, 138, 0.3);
-}
-
-.nav-items {
-    margin: 0 -8px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.nav-items li {
-    padding: 3px 10px 6px 10px;
-    margin: 0 10px;
-    font-size: 15px;
+    margin-bottom: -40px;
 }
 
 .bcc-header-conteiner hr{
-    position: absolute;
-    top: 67%;
-    margin-top: -5px;
-    width: 60%;
-    left: 12.3%;
-    border: none;
-    border-top: 1px solid white;
+    position: relative;
+     /*Posicionando abaixo do título*/
+    bottom: 12.5vh;
+    left: 16.5vh;
+    width: 45%;
 }
-
-
+.header-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-items{
+    position: relative;
+    background-color:rgba(50, 80, 138, 0.3);
+    list-style: none;
+    /*Posicionando abaixo do título do header*/
+    display: flex; 
+    left: 18.3%;
+    bottom: 88%;
+    width: 44.6vw;
+}
+.nav-items li{
+    padding: 10px;
+}
 
 
 /*ESTILOS MAIN*/
@@ -93,9 +74,9 @@ hr {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     margin: 0 5.5%;
-    top: 5vw; /* Ajuste o valor conforme necessário */
+    top: 6vw; /* Ajuste o valor conforme necessário */
     position: relative;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .content-card{
@@ -106,7 +87,7 @@ hr {
 
 .content-text{
     padding: 5%;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 .content-images{
@@ -124,7 +105,7 @@ hr {
 }
 .calculator-text{
     padding: 5%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .calculator-box{
     display: flex;

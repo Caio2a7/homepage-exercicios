@@ -177,28 +177,35 @@ hr {
 
 
 .form-row button{
-    font-size: 20px;
-    position: relative;
-    border: none;
-    padding: 7px;
     margin: 2%;
-    border-radius: 11%;
+    padding: 1%;
+    border-radius: 8%;
+    font-size: 20px;
     background-color: #526fa8;
+    border: none;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
 }
 
-.calculator-result p{
-    display: inline;
-    margin: 0;
-    font-size: 20px;
-    border: none;
-    padding: 7px;
+.calculator-result{
     margin: 2%;
-    border-radius: 11%;
+    padding: 1%;
+    border-radius: 4%;
+    font-size: 20px;
+    background-color: #526fa8;
+    border: none;
 }
 
+#calc-result{
+    padding: 5px;
+}
 
+.incorrect{
+    background-color: rgb(172, 56, 56);;
+}
+.correct{
+    background-color: rgb(46, 116, 69);
+}
 
 .bcc-footer-conteiner footer{
     display: flex;
@@ -211,6 +218,8 @@ hr {
     border: none;
     margin: 20px;
 }
+/* Estilos dinâmicos */
+
 
 .nav-items li:hover{
     animation-duration: 0.2s;
