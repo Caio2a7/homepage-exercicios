@@ -95,6 +95,10 @@ hr {
     align-items: center;
     justify-content: center;
 }
+.content-images img{
+    border: 1px solid white;
+    margin: 20px;
+}
 
 /* ESTILOS CALCULADORA*/
 .calculator-card{
@@ -113,7 +117,7 @@ hr {
 }
 .calculator-box form {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     /*Estilos de aparência*/
     background-color: #113272;
     width: 70%;
