@@ -21,60 +21,52 @@ hr {
 
 /* ESTILOS HEADER*/
 .bcc-header-conteiner {
-    position: relative; /* Para usar como referência para a posição absoluta */
-    padding: 10px;
     background-color: #113272;
+    position: relative;
+    height: 10vw;
 }
 
-
-.bcc-header-conteiner h1{
-    padding: 20px;
-    font-size: 25px;
-}
-
-.header-title {
+.header-title{
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-}
-
-.header-nav {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    width: 58.5%;
-    margin-top: -3.8%;
-    margin-left: 11.6%;
-    padding: 0.5% 0.8%;
-    background-color: rgba(50, 80, 138, 0.3);
-}
-
-.nav-items {
-    margin: 0 -8px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.nav-items li {
-    padding: 3px 10px 6px 10px;
+    font-size: 1.8vw;
     margin: 0 10px;
-    font-size: 15px;
+}
+
+.header-title h1{
+    margin-left: 3%;
+}
+
+
+.header-nav{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-items{
+    position: relative;
+    background-color:rgba(50, 80, 138, 0.3);
+    list-style: none;
+    /*Posicionando abaixo do título do header*/
+    display: flex; 
+    width: 46.6vw;
+    left: 25%;
+    bottom: 74%;
+    height: 4vw;
+}
+.nav-items li{
+    padding: 10px;
+    font-size: 1.5vw;
 }
 
 .bcc-header-conteiner hr{
-    position: absolute;
-    top: 67%;
-    margin-top: -5px;
-    width: 60%;
-    left: 12.3%;
-    border: none;
-    border-top: 1px solid white;
+    position: relative;
+    /*Posicionando abaixo do título*/
+    bottom: 70%;
+    left: 11.7%;
+    width: 46.6%;
 }
-
-
-
 
 /*ESTILOS MAIN*/
 .bcc-main-content{
@@ -93,9 +85,9 @@ hr {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     margin: 0 5.5%;
-    top: 5vw; /* Ajuste o valor conforme necessário */
+    top: 6vw; /* Ajuste o valor conforme necessário */
     position: relative;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .content-card{
@@ -106,13 +98,17 @@ hr {
 
 .content-text{
     padding: 5%;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 .content-images{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.content-images img{
+    border: 1px solid white;
+    margin: 20px;
 }
 
 /* ESTILOS CALCULADORA*/
@@ -124,15 +120,16 @@ hr {
 }
 .calculator-text{
     padding: 5%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .calculator-box{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .calculator-box form {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
     /*Estilos de aparência*/
     background-color: #113272;
     width: 70%;
@@ -162,11 +159,10 @@ hr {
 }
 
 .calculator-box form input {
-    flex-grow: 1;
     font-size: 14px;
     margin: 10px;
-    position: relative;
     border-radius: 3%;
+    width: 20%;
     background-color: white;
     display: inline-block;
     padding: 4px;
@@ -245,32 +241,21 @@ hr {
 }
 /* Media query para telas menores */
 @media screen and (max-width: 991px) {
-    hr{
-        display: none;
-    }
-    .bcc-header-conteiner {
-        padding: 10px;
-    }
-    .header-title{
-        padding: 10px;
-    }
-    .nav-items li {
-        display: block;
-        margin: -5px;
-    }
 
-    .bcc-main-content {
-        padding: 10px;
-    }
     .content-card{
         width: 80%;
     }
     .content-images img{
         width: 95%;
     }
-    .bcc-main-content p, img, h2{
-        padding: 5px;
+    .calculator-box .form-row{
+        align-items: center;
+        vertical-align: middle;
     }
-
+    .calculator-box form input{
+        width: 70%;
+    }
+    .calculator-box form label{
+        width: 50%;
+    }
 }
-

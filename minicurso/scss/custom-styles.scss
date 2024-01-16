@@ -1,0 +1,9 @@
+// Importe as partes específicas do Bootstrap que você precisa
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+// Sobrescreva a cor primária (bg-primary) diretamente
+.bg-primary {
+  background-color: $indigo !important;
+}

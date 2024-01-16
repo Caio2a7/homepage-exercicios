@@ -22,21 +22,23 @@ hr {
 /* ESTILOS HEADER*/
 .bcc-header-conteiner {
     background-color: #113272;
-    margin-bottom: -40px;
+    position: relative;
+    height: 10vw;
 }
 
-.bcc-header-conteiner hr{
-    position: relative;
-     /*Posicionando abaixo do título*/
-    bottom: 12.5vh;
-    left: 16.5vh;
-    width: 45%;
-}
 .header-title{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 1.8vw;
+    margin: 0 10px;
 }
+
+.header-title h1{
+    margin-left: 3%;
+}
+
+
 .header-nav{
     position: relative;
     display: flex;
@@ -48,14 +50,23 @@ hr {
     list-style: none;
     /*Posicionando abaixo do título do header*/
     display: flex; 
-    left: 18.3%;
-    bottom: 88%;
-    width: 44.6vw;
+    width: 46.6vw;
+    left: 25%;
+    bottom: 74%;
+    height: 4vw;
 }
 .nav-items li{
     padding: 10px;
+    font-size: 1.5vw;
 }
 
+.bcc-header-conteiner hr{
+    position: relative;
+    /*Posicionando abaixo do título*/
+    bottom: 70%;
+    left: 11.7%;
+    width: 46.6%;
+}
 
 /*ESTILOS MAIN*/
 .bcc-main-content{
@@ -114,6 +125,7 @@ hr {
 .calculator-box{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .calculator-box form {
     display: flex;
@@ -147,11 +159,10 @@ hr {
 }
 
 .calculator-box form input {
-    flex-grow: 1;
     font-size: 14px;
     margin: 10px;
-    position: relative;
     border-radius: 3%;
+    width: 20%;
     background-color: white;
     display: inline-block;
     padding: 4px;
@@ -230,32 +241,21 @@ hr {
 }
 /* Media query para telas menores */
 @media screen and (max-width: 991px) {
-    hr{
-        display: none;
-    }
-    .bcc-header-conteiner {
-        padding: 10px;
-    }
-    .header-title{
-        padding: 10px;
-    }
-    .nav-items li {
-        display: block;
-        margin: -5px;
-    }
 
-    .bcc-main-content {
-        padding: 10px;
-    }
     .content-card{
         width: 80%;
     }
     .content-images img{
         width: 95%;
     }
-    .bcc-main-content p, img, h2{
-        padding: 5px;
+    .calculator-box .form-row{
+        align-items: center;
+        vertical-align: middle;
     }
-
+    .calculator-box form input{
+        width: 70%;
+    }
+    .calculator-box form label{
+        width: 50%;
+    }
 }
-
