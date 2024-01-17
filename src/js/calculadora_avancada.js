@@ -31,6 +31,6 @@ function media_ponderada() {
     } else {
         resultadoBox.classList.remove('incorrect');
         resultadoBox.classList.remove('correct');
-        textResult.innerText = "Preencha corretamente todos os campos!";
+        alert("Preencha ao menos um campo.");
     }
 }
