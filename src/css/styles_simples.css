@@ -1,0 +1,54 @@
+:root{
+    /*Variáveis de Cores*/
+    /* #337ab7 #113272f2*/
+    --cor-primaria: #113272f2;
+    --cor-secundaria: #FFE605;
+    --cor-terciaria: #17EB88;
+    --azul-centaurea: #0262C5;
+    --box-fundo: #1A1414;
+    --box-hover: #2D2424;
+    /*Fontes a serem usadas */
+    --font-inter: "Inter", sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-inter);
+    color: white;
+    border: none;
+}
+header{
+    background: var(--cor-primaria);
+    box-shadow: -1px 3px 75.6px 206px rgba(0, 0, 0, 0.25) inset;
+}
+header span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header span h1{
+    margin: 0 30px;
+    flex-shrink: 0;
+    font-family: var(--font-inter);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 80px;
+    line-height: normal;
+}
+
+main{
+    background: url('../img/imagem_de_fundo.png'), lightgray 10%;
+    background-size: cover;
+}
+footer{
+    background: var(--cor-primaria);
+    box-shadow: -1px 3px 75.6px 206px rgba(0, 0, 0, 0.25) inset;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section{
+    margin: 20px;
+}
