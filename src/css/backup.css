@@ -1,6 +1,3 @@
-/*Variáveis e estilos configurados*/
-
-
 /* ESTILOS GLOBAIS*/
 * {
     font-family: 'Poppins', sans-serif;
@@ -28,14 +25,15 @@ hr {
 .bcc-header-container header{
     display: flex;
     position: relative;
-    background-color: #113272;
+    background-color: #183672;
 }
 .header-logo{
     display: flex;
     justify-content: center;
-    background-color: #112958;
     width: 8%;
-    border-radius: 0 0% 45% 0;
+    border-radius: 0 0 50% 0;
+    box-shadow: 0 0 15px 1px #7097e0;
+    background: linear-gradient(45deg, #163e8f, #0b1d41);
 }
 .header-logo img{
     width: 80%;
@@ -58,10 +56,9 @@ hr {
     border-top: 1px solid white;
     display: flex;
     position: relative;
-    background-color:rgba(50, 80, 138, 0.3);
+    background-color:rgba(50, 80, 138, 0.2);
     list-style: none;
     /*Posicionando abaixo do título do header*/
-    display: flex; 
     width: 57.4vw;
     bottom: 0.7vw;
     height: 4vw;
@@ -119,15 +116,14 @@ hr {
 
 .content-images{
     position: relative;
-    bottom: 60px;
 }
 .content-images img{
     border: 1px solid white;
-    margin: 20px;
+    margin: 0px 20px 20px;
+    box-shadow: 5px 5px 20px 5px #0b1d41;
 }
 .content-images figcaption{
     margin-left: 20px;
-    margin-top: 30px;
 }
 
 /* ESTILOS CALCULADORA*/
@@ -303,7 +299,7 @@ hr {
         margin: 30px 0;
     }
     .calculator-box{
-        width: 100%;
+        width: 101%;
         margin: 0;
     }
 }
