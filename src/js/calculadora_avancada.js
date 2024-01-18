@@ -1,13 +1,12 @@
 function estilizarAprovado(resultadoBox, textResult, resultado){
     resultadoBox.classList.add('correct');
     resultadoBox.classList.remove('incorrect');
-    textResult.innerText = `${resultado.toFixed(2)} Nota suficiente`;
-
+    textResult.innerText = `${resultado.toFixed(2)} Acima da Nota Mínima.`;
 }
 function estilizarReprovado(resultadoBox, textResult, resultado){
     resultadoBox.classList.add('incorrect');
     resultadoBox.classList.remove('correct');
-    textResult.innerText = `${resultado.toFixed(2)} Nota insuficiente`;
+    textResult.innerText = `${resultado.toFixed(2)} Abaixo da nota mínima.`;
 }
 /*Função para calcular a média ponderada da nota de corte dos TRIs*/ 
 function media_ponderada() {
@@ -27,7 +26,7 @@ function media_ponderada() {
         // Cálculo da média ponderada
         const resultado = triId.reduce((acc, id, index) => acc + (notasValores[index] * pesosValores[index]), 0) / somaPesos;
         
-        resultado < 700 ? estilizarReprovado(resultadoBox, textResult, resultado) : estilizarAprovado(resultadoBox, textResult, resultado);
+        resultado < 658 ? estilizarReprovado(resultadoBox, textResult, resultado) : estilizarAprovado(resultadoBox, textResult, resultado);
     } else {
         resultadoBox.classList.remove('incorrect');
         resultadoBox.classList.remove('correct');
