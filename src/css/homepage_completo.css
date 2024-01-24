@@ -186,7 +186,7 @@ hr {
         display: none;
     }
     .header-nav h1{
-        font-size: 20px;
+        font-size: 18px;
     }
     .content-card{
         display: block;
@@ -201,6 +201,7 @@ hr {
         margin: 30px 0;
     }
     .calculator-box{
+        align-items: center;
         width: 101%;
         margin: 0;
     }
