@@ -15,9 +15,7 @@
     height: 70%;
     width: 90%;
 }
-.calculator-box{
-    margin: 0 30px;
-}
+
 .calculator-box form {
     display: flex;
     justify-content: space-between;
