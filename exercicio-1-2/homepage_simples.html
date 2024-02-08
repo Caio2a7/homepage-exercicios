@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFRN-Ciências da Computação</title>
+    <link href="css/homepage_simples.css" rel="stylesheet">
+    <script src="js/calculadora_avancada.js" defer></script>
+</head>
+<body>
+    <div class="bcc-header-container">
+        <header>
+            <div class="header-logo">
+                <img src="assets/img/brasao_negativo.png" alt="brasão ufrn" width="110px" height="100px">
+            </div>
+            <div class="header-nav">
+                <h1><b>UFRN - Ciências da Computação</b></h1>
+                <nav>
+                    <ul class="nav-items">
+                        <li><a class="nav-link" href="https://www.ufrn.br">UFRN</a></li>
+                        <li><a class="nav-link" href="https://www.dimap.ufrn.br">DIMAP</a></li>
+                        <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
+                        <li><a class="nav-link" href="https://www.metropoledigital.ufrn.br/portal/">IMD</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr>
+    </div>
+    <div class="bcc-main-content">
+        <main>
+            <section class="sec-main-content">
+                <h2><b>Apresentação e História</b></h2>
+                <div class="content-card">
+                    <div class="content-text">
+                        <p>O Bacharelado em Ciências da Computação visa proporcionar uma formação completa, abrangendo tanto aspectos teóricos quanto práticos. O curso tem como objetivo capacitar os alunos para aplicar o conhecimento computacional na resolução de problemas computacionais reais e no desenvolvimento de tecnologias inovadoras.
+                            <br><br>A formação inclui aprofundamento em teoria da computação, algoritmos e programação, preparando os alunos para os desafios tecnológicos contemporâneos. Além disso, destaca-se a importância da interdisciplinaridade, ética e responsabilidade social na aplicação prática do conhecimento em computação.
+                            <br><br>O curso localiza-se na sede UFRN de Natal com o setor sendo o Centro Tecnologico(CT) no prédio do Departamento de Informática e Matemática Aplicada.
+                            <br><br>Além disso, o curso possui um PET que fundado em setembro de 1994. O PET-CC atua seguindo as linhas de ensino, pesquisa e extensão. Entre as atividades de ensino, diversos minicursos e ações de monitoria são oferecidas ao longo do ano, com os mais variados objetivos e destinados a uma grande diversidade de alunos, com foco especial nos ingressantes do curso. Quanto à pesquisa, cada bolsista do PET é responsável por desenvolver, individualmente, um projeto de pesquisa com um professor.  E, finalmente, as ações de extensão, que incluem diversas atividades, entre elas a divulgação do curso na mostra de profissões e atividades de apoio.
+                        </p> 
+                    </div>
+                    <div class="content-images">
+                        <span>
+                            <figure>
+                                <figcaption>Departamento de Informática e Matemática Aplicada</figcaption>
+                                <img src="assets/img/dimap.jpg" alt="prédio do curso" width="450vh" height="250vh">
+                                <figcaption>Programa de Educação Tutorial Ciências da Computação</figcaption>
+                                <img src="assets/img/petcc.png" alt="petcc" width="450vh" height="250vh">
+                            </figure>
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+                <h2><b>Notas de Corte e Calculadora de Pesos</b></h2>
+                <div class="calculator-card">
+                    <div class="calculator-text">
+                         <p>A forma principal para ingressar no curso é por meio da nota de corte mínima do TRI, via SISU feito a prova ENEM. Existem as formas de ingressão pelo ProUni e Fies, porém iremos focar na nota de corte do SISU.
+                            <br><br>PESOS: <br>LINGUAGENS - 1.0<br> EXATAS - 3.0<br> HUMANAS - 1.0<br> NATUREZAS - 2.0<br> REDAÇÃO - 1.5
+                            <br><br>A nota de corte para ampla concorrência são 754.51 pontos, para candidatos autodeclarados pretos, pardos ou indígenas, com renda familiar bruta per capita igual ou inferior a 1,5 salário mínimo e que tenham cursado integralmente o ensino médio em escolas públicas são 646.96 pontos,
+                            Candidatos autodeclarados pretos, pardos ou indígenas que, independentemente da renda (art. 14, II, Portaria Normativa nº 18/2012), tenham cursado integralmente o ensino médio em escolas públicas (Lei nº 12.711/2012) são 659.32,
+                            Candidatos com renda familiar bruta per capita igual ou inferior a 1,5 salário mínimo que tenham cursado integralmente o ensino médio em escolas públicas (Lei nº 12.711/2012) são 711.29,
+                        </p>  
+                    </div>
+                    <div class="calculator-box">
+                        <form id="notas-calculadora">
+                            <fieldset>
+                                <legend>Calculadora de Média Ponderada</legend>
+                                <div class="form-row">
+                                    <label for="linguagens-input">Linguagens, Códigos e suas Tecnologias: </label>
+                                    <input id="linguagens-input" type="number" placeholder="TRI">
+                                    <input id="peso-linguagens" type="number" placeholder="PESO"><br><br>
+                                </div>
+                                <div class="form-row">
+                                    <label for="exatas-input">Matemática e suas Tecnologias: </label>
+                                    <input id="exatas-input" type="number" placeholder="TRI">
+                                    <input id="peso-exatas" type="number" placeholder="PESO"><br><br>
+                                </div>
+                                <div class="form-row">
+                                    <label for="humanas-input">Ciências Humanas e suas Tecnologias: </label>
+                                    <input id="humanas-input" type="number" placeholder="TRI">
+                                    <input id="peso-humanas" type="number" placeholder="PESO"><br><br>
+                                </div>
+                    
+                                <div class="form-row">
+                                    <label for="naturezas-input">Ciências da Natureza e suas Tecnologias: </label>
+                                    <input id="naturezas-input" type="number" placeholder="TRI">
+                                    <input id="peso-naturezas" type="number" placeholder="PESO"><br><br>
+                                </div>
+                            
+                                <div class="form-row">
+                                    <label for="redacao-input">Prova Escrita de Redação: </label>
+                                    <input id="redacao-input" type="number" placeholder="TRI">
+                                    <input id="peso-redacao" type="number" placeholder="PESO"><br><br>
+                                </div>
+                                <div class="form-row">
+                                    <button id="botao-submit" type="button" onclick="media_ponderada()">Calcular</button>
+                                    <div class="calculator-result">
+                                        <p>Resultado:</p>
+                                        <p id="calc-result"></p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <hr>
+                </div>
+                <h2><b>Matérias e Conteúdo</b></h2>
+                <div class="content-card">
+                    <div class="content-text">
+                        <p>O curso de Ciências da Computação abrange uma gama grande de disciplinas essenciais. Durante a graduação, os alunos exploram profundamente diversas áreas, incluindo:
+                            <br><br>O estudo das Linguagens de Programação e Compiladores proporciona uma compreensão sólida das estruturas de linguagens de programação e o processo de compilação, desenvolvendo habilidades cruciais para a escrita eficiente e otimizada de código.
+                            <br><br>Na abordagem de Sistemas Operacionais, Sistemas Distribuídos, Redes de Computadores e Sistemas Paralelos, os alunos mergulham no funcionamento interno dos sistemas operacionais, aprendem sobre redes de computadores e exploram os desafios e soluções em ambientes distribuídos e paralelos.
+                            <br><br>Disciplinas voltadas para Engenharia de Software, Engenharia de Requisitos, Concepção e Especificação de Software preparam os estudantes para as práticas e processos fundamentais no ciclo de vida do desenvolvimento de software, desde a concepção da ideia até a especificação detalhada do produto final.
+                            <br><br>Além de diversas outras áreas e assuntos pertinentes e fundamentais da computação, como inteligências artificiais, cibersegurança, fundamentos matemáticos da computação e outras matérias.
+                            
+                        </p> 
+                    </div>
+                    <div class="content-images">
+                        <span>
+                            <figure>
+                                <figcaption>Matéria de Estruturas de Dados</figcaption>
+                                <img src="assets/img/estruturas e algoritmos.png" alt="Mapa Conceitual sobre algoritmos e estruturas de dados" width="450vh" height="250vh">
+                                <figcaption>Matérias de Exatas </figcaption>
+                                <img src="assets/img/matematica.jpg" alt="Quadro negro recheado de fórmulas matemáticas" width="450vh" height="250vh">
+                            </figure>
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+                <h2><b>Ciência e Mercado de Trabalho</b></h2>
+                <div class="content-card">
+                    <div class="content-text">
+                        <p>No âmbito da ciência e do mercado de trabalho no Brasil, o campo da computação oferece amplas oportunidades e demanda por profissionais qualificados. O setor de tecnologia da informação (TI) tem experimentado um crescimento significativo, refletindo a necessidade constante de inovação e soluções digitais.
+                            <br><br>Profissionais formados em Ciências da Computação têm a possibilidade de atuar em diversos segmentos, como desenvolvimento de software, análise de dados, segurança da informação e inteligência artificial. O mercado valoriza tanto a competência técnica quanto a habilidade de resolver problemas complexos, promovendo um ambiente dinâmico e desafiador.
+                            <br><br>Além disso, o Brasil destaca-se em competições de programação a nível nacional, proporcionando oportunidades para estudantes demonstrarem suas habilidades. Participar de eventos como a Maratona de Programação pode não apenas enriquecer o currículo, mas também abrir portas para networking e reconhecimento na comunidade de TI.
+                            <br><br>Dessa forma, o cenário atual da ciência da computação no Brasil oferece uma combinação única de crescimento profissional, diversidade de campos de atuação e a chance de participar ativamente em competições que contribuem para o desenvolvimento técnico e intelectual dos estudantes.
+                        </p> 
+                    </div>
+                    <div class="content-images">
+                        <span>
+                            <img src="assets/img/cientista-da-computacao.webp" alt="prédio do curso" width="450vh" height="250vh">
+                            <img src="assets/img/mercado de trabalho.jpg" alt="laboratorios do curso" width="450vh" height="250vh">
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="bcc-footer-conteiner">
+        <footer>
+            <div class="footer-sec">
+                <p>Telefone - (84) 3342-2299
+                    cccc@dimap.ufrn.</p>
+                <p>Natal/RN - Brasil</p>
+            </div>
+            <div class="footer-sec">
+                <p>© 2023, Universidade Federal do Rio Grande do Norte.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
