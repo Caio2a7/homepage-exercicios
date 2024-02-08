@@ -64,7 +64,7 @@ hr {
 /*ESTILOS MAIN*/
 .bcc-main-content{
     padding: 20px;
-    background: url("../assets/img/imagem_de_fundo.png");
+    background: url("../img/imagem_de_fundo.png");
 }
 .sec-main-content{
     display: flex;
