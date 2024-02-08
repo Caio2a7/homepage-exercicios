@@ -44,7 +44,19 @@ hr {
     top: 15px;
 }
 
+.nav-items{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.nav-items #log{
+    background-color: #0d2350;
+    border-radius: 12%;
+    margin-left: 340px;
+    padding: 10px 20px 10px 20px;
+}
 #nav{
+    padding-right: 370px;
     border-top: 1px solid white;
     display: flex;
     position: relative;
@@ -53,10 +65,9 @@ hr {
     top: 15px;
 }
 
+
 .nav-items li, .nav-route{
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     font-size: 16px;
 }

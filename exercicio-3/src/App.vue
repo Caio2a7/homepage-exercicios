@@ -9,14 +9,15 @@
                     <ul class="nav-items">
                         <div id="nav">
                             <router-link class='nav-route' to="/">Home</router-link>
-                            <router-link class='nav-route' to="/about">About</router-link>
-                            <router-link class='nav-route' v-if="authenticated" to="/secure">Secure</router-link>
-                            <router-link class='nav-route' v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
-                            <router-link class='nav-route' v-else to="/login">Login</router-link>
+                            <router-link class='nav-route' to="/about">Sobre</router-link>
                             <li><a class="nav-link" href="https://www.ufrn.br">UFRN</a></li>
                             <li><a class="nav-link" href="https://www.dimap.ufrn.br">DIMAP</a></li>
                             <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
                             <li><a class="nav-link" href="https://www.metropoledigital.ufrn.br/portal/">IMD</a></li>
+                        </div>
+                        <div class="nav-login">
+                            <router-link id='log' class='nav-route' v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+                            <router-link id='log' class='nav-route' v-else to="/login">Login</router-link>
                         </div>
                     </ul>
                 </nav>
@@ -38,8 +39,8 @@ import HeaderLogo from "./components/HeaderLogo.vue";
             // this is only for testing purposes no actual app will have this
             // an api call will validate user credentials
             mockAccount: {
-                username: "ameyrupji",
-                password: "P@ssword!"
+                username: "petcc",
+                password: "123"
             }
         };
     },

@@ -1,19 +1,15 @@
 <template>
     <div class='login-background'>
         <div id="login">
+            <h1>Login</h1>
             <form>
-                <fieldset>
-                    <h1>Login</h1>
-                    <div class="form-inputs">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" v-model="input.username" placeholder="Username" />
-                    </div>
-                    <div class="form-inputs">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" v-model="input.password" placeholder="Password" />
-                    </div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" v-model="input.username" placeholder="Username" />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" v-model="input.password" placeholder="Password" />
+                <div class="button">
                     <button type="button" v-on:click="login()">Login</button>
-                </fieldset>
+                </div>
             </form>
         </div>
     </div>
@@ -38,10 +34,10 @@
                         this.$emit("authenticated", true);
                         this.$router.replace({ name: "Secure" });
                     } else {
-                        console.log("The username and / or password is incorrect");
+                        alert("Username ou senha incorreta");
                     }
                 } else {
-                    console.log("A username and password must be present");
+                    alert("Preencha o formulário");
                 }
             }
         }

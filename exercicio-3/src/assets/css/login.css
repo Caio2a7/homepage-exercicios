@@ -2,56 +2,57 @@
     display: flex;
     justify-content: center ;
     padding: 50px;
-    padding-bottom: 140px;
     background: url("../img/imagem_de_fundo.png");
 }
+.login-background h1{
+    position: relative;
+}
 #login{
-    background-color: red;
-    display: flex;
+    position: relative;
+    bottom: 40px;
     justify-content: center;
-    padding: -2%;
     margin: 5%;
-    width: 50%;
+    width: 40%;
 }
 
 #login form {
-    flex-grow: 1;
-    justify-content: space-between;
     background-color: #113272;
+    display: block;
+    flex-grow: 1;
     border-radius: 2%;
     border: 1px solid white;
 }
-.form-inputs{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
 #login form label {
-    background-color: #526fa8;
     border-radius: 3%;
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 18px;
-    margin: 13px 8px ;
-    width: 30%;
+    font-size: 20px;
+    margin: 20px;
 }
 #login form input {
-    height: 60%;
+    display: flex;
+    padding: 10px;
+    margin: 15px;
+    flex-grow: 1;
     font-size: 18px;
-    margin: 15px 0 13px;
     border-radius: 2%;
-    width: 25%;
     background-color: white;
-    display: inline-block;
-    padding: 6px;
     border: none;
     color: black;
+    width: 90%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 #login button{
-    margin: 2%;
-    padding: 1%;
-    border-radius: 3%;
+    margin: 15px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10%;
     font-size: 20px;
     background-color: #0d2350;
     border: none;
