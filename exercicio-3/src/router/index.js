@@ -11,24 +11,38 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
+    path: '/sobre',
     name: 'About',
     component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
+      return import('../views/About.vue')
     }
   },
   {
-    path: '/secure',
-    name: 'Secure',
+    path: '/perfil',
+    name: 'Profile',
     component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/Secure.vue')
+      return import('../views/Profile.vue')
     }
   },
   {
     path: '/login',
     name: 'Login',
     component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/Login.vue')
+      return import('../views/Login.vue')
+    }
+  },
+  {
+    path: '/contato',
+    name: 'Contact',
+    component: function () {
+      return import('../views/Contact.vue')
+    }
+  },
+  {
+    path: '/forum',
+    name: 'Forum',
+    component: function () {
+      return import('../views/Forum.vue')
     }
   }
 ]

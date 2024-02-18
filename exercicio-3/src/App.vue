@@ -4,19 +4,21 @@
         <header>
             <HeaderLogo />
             <div class="header-nav">
-                <h1><b>UFRN - Portal do Bacharelado em Ciências da Computação</b></h1>
+                <h1><b>UFRN - Portal de Bacharelado em Ciências da Computação</b></h1>
                 <nav>
                     <ul class="nav-items">
                         <div id="nav">
                             <router-link class='nav-route' to="/">Home</router-link>
-                            <router-link class='nav-route' to="/about">Sobre</router-link>
-                            <router-link class='nav-route' to="/help">Contato</router-link>
-                            <li><a class="nav-link" href="https://www.ufrn.br">UFRN</a></li>
+                            <router-link class='nav-route' to="/forum">Fórum</router-link>
+                            <router-link class='nav-route' to="/contato">Contato</router-link>
+                            <router-link class='nav-route' to="/sobre">Sobre</router-link>
                             <li><a class="nav-link" href="https://www.dimap.ufrn.br">DIMAP</a></li>
                             <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
-                            <li><a class="nav-link" href="https://www.metropoledigital.ufrn.br/portal/">IMD</a></li>
-
-                        </div>
+                            </div>
+                            <div class="nav-login">
+                                    <router-link id='log' class='nav-route' v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+                                    <router-link id='log' class='nav-route' v-else to="/login">Login</router-link>
+                            </div>
                     </ul>
                 </nav>
             </div>

@@ -37,8 +37,9 @@ hr {
     position: relative;
     display: block;
     justify-content: flex-start;
-    margin: 0 30px;
+    margin-left: 30px;
     height: 100%;
+    width: 100%;
 }
 .header-nav h1{
     position: relative;
@@ -49,22 +50,30 @@ hr {
 .nav-items{
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    width: 100%;
+    background-color:rgba(50, 80, 138, 0.2);
+    border-top: 1px solid white;
+
+}
+.nav-login{
+    display: flex;
+    right: 10%;
+    position: relative;
 }
 .nav-items #log{
     background-color: #0d2350;
     border-radius: 12%;
-    margin-left: 340px;
-    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    bottom: 5px;
 }
 #nav{
-    border-top: 1px solid white;
     display: flex;
-    flex-grow: 1;
     position: relative;
-    background-color:rgba(50, 80, 138, 0.2);
     list-style: none;
-    top: 1px;
+    top: 1px;   
+    flex-grow: 1;
+    width: 100%;
 }
 
 

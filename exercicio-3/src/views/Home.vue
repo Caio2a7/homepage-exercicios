@@ -66,7 +66,7 @@
                                     <input id="peso-redacao" type="number" placeholder="PESO"><br><br>
                                 </div>
                                 <div class="form-row">
-                                    <button id="botao-submit" type="button" @click="media_ponderada()">Calcular</button>
+                                    <button id="botao-submit" type="button" @click="media()">Calcular</button>
                                     <div class="calculator-result">
                                         <p>Resultado:</p>
                                         <p id="calc-result"></p>
@@ -144,11 +144,26 @@ import { media_ponderada } from "../js/calculadora_avancada.js";
 
 export default {
   name: 'Home',
-  methods: {
-    media_ponderada() {
-      // Chama a função media_ponderada sempre que o botão de "Calcular" for clicado
-      media_ponderada();
+  data() {
+    return {
+      username: '' // Inicialize a variável username
     }
+  },
+  methods: {
+    media() {
+      media_ponderada();
+      console.log(this.username);
+    }
+  },
+  created() {
+    this.$bus.$on("username", (username) => {
+      this.username = username; 
+    });
+  },
+  beforeDestroy() {
+    this.$bus.$off("username");
   }
 }
 </script>
+
+

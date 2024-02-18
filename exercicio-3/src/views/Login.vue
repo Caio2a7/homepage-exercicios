@@ -16,30 +16,33 @@
 </template>
 
 <script>
-    export default {
-        name: 'Login',
-        data() {
-            return {
-                input: {
-                    username: "",
-                    password: ""
-                }
-            }
-        },
-        methods: {
-            login() {
-                if(this.input.username != "" && this.input.password != "") {
-                    // This should actually be an api call not a check against this.$parent.mockAccount
-                    if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$router.replace({ name: "Secure" });
-                    } else {
-                        alert("Username ou senha incorreta");
-                    }
-                } else {
-                    alert("Preencha o formulário");
-                }
-            }
-        }
+export default {
+  name: 'Login',
+  data() {
+    return {
+      input: {
+        username: "",
+        password: ""
+      }
     }
+  },
+  methods: {
+    login() {
+      if (this.input.username !== "" && this.input.password !== "") {
+        // Esta parte deve ser uma chamada de API, não apenas uma verificação local
+        if (this.input.username === this.$parent.mockAccount.username && this.input.password === this.$parent.mockAccount.password) {
+          this.$emit("authenticated", true);
+          // Emitindo o evento diretamente para o componente Home.vue
+          this.$bus.$emit("username", this.input.username);
+          this.$router.replace({ name: "Profile" });
+        } else {
+          alert("Username ou senha incorreta");
+        }
+      } else {
+        alert("Preencha o formulário");
+      }
+    }
+  }
+}
 </script>
+
