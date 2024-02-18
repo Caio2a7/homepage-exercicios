@@ -1,6 +1,6 @@
 <template>
     <div class="header-logo">
-        <img src="../assets/img/brasao_negativo.png" alt="brasão ufrn" width="105px" height="100px">
+        <img src="../assets/img/brasao_negativo.png" alt="brasão ufrn" width="90px" height="85px">
     </div>
 </template>
 

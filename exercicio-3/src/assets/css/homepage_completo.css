@@ -26,11 +26,13 @@ hr {
     background-color: #183672;
 }
 .header-logo{
+    transition: box-shadow 0.5s ease-in-out;
     border-radius: 0 0 50% 0;
-    box-shadow: 0 0 12px 1px #7097e0;
     background: linear-gradient(45deg, #163e8f, #0b1d41);
 }
-
+.header-logo:hover{
+    box-shadow: 0 0 12px 1px #7097e0;
+}   
 .header-nav{
     position: relative;
     display: block;
@@ -41,7 +43,7 @@ hr {
 .header-nav h1{
     position: relative;
     font-size: 30px;
-    top: 15px;
+    top: 3px;
 }
 
 .nav-items{
@@ -56,20 +58,21 @@ hr {
     padding: 10px 20px 10px 20px;
 }
 #nav{
-    padding-right: 370px;
     border-top: 1px solid white;
     display: flex;
+    flex-grow: 1;
     position: relative;
     background-color:rgba(50, 80, 138, 0.2);
     list-style: none;
-    top: 15px;
+    top: 1px;
 }
 
 
-.nav-items li, .nav-route{
+.nav-link, .nav-route{
     display: flex;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -82,15 +85,14 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     margin: 2% 0%;
 }
 .sec-main-content h2{
     display: flex;
     align-self: flex-start;
-    text-decoration: underline;
+    text-align: center;
     text-decoration-thickness: 1px;
-    top: 5.4vw; 
+    top: 1.4vw; 
     position: relative;
     font-size: 24px;
     margin-left: 6.5%;
@@ -99,14 +101,14 @@ hr {
     display: flex;
     justify-content: start;
     padding: -2%;
-    margin: 5%;
+    margin: 1%;
 }
 .content-text{
-    padding: 2%;
-    font-size: 15px;
     background-color: rgb(26, 20, 20, 0.4);
     border: 1px solid white;
-    height: 60%;
+    padding: 20px;
+    font-size: 24x;
+    margin-bottom: 20px;
 }
 .content-images{
     position: relative;
@@ -114,10 +116,11 @@ hr {
 .content-images img{
     border: 1px solid white;
     margin: 0px 20px 20px;
-    box-shadow: 5px 5px 20px 5px #0b1d41;
+    box-shadow: 2px 2px 15px 2px #0b1d41;
 }
 .content-images figcaption{
-    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
 }
 /* Estilos Footer*/
 .bcc-footer-conteiner footer{
@@ -170,35 +173,44 @@ hr {
 }
 @media screen and (max-width: 929px){
     .header-nav h1{
-        font-size: 24px;
+        font-size: 27px;
     }
     .nav-items{
-        top: 25px;
+        top: 1px;
     }
 }
 /* Media Querys para telas de Tablets */
-@media screen and (max-width: 779px){
+@media screen and (max-width: 821px){
     .header-logo img{
         width: 75px;
         height: 75px;
     }
     .header-nav h1{
-        font-size: 20px;
+        font-size: 21px;
     }
     .nav-items{
-        top: 10px;
+        top: 6px;
     }
     .nav-items li{
         font-size: 14px;
     }
+    .sec-main-content h2{
+        align-self: center;
+        margin-left: 0;
+    }
 }
 /* Media Querys para telas de smartphone */
-@media screen and (max-width:649px){
+@media screen and (max-width:665px){
+    .header-logo img{
+        width: 85px;
+        height: 80px;
+    }
     .nav-items{
         display: none;
     }
     .header-nav h1{
-        font-size: 18px;
+        font-size: 21px;
+        align-self: center;    
     }
     .content-card{
         display: block;
@@ -215,5 +227,10 @@ hr {
     .calculator-box{
         width: 101%;
         margin: 0;
+    }
+    .sec-main-content h2{
+        align-self: center;
+        margin-left: 0;
+        font-size: 22px;
     }
 }

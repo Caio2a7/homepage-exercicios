@@ -8,7 +8,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" v-model="input.password" placeholder="Password" />
                 <div class="button">
-                    <button type="button" v-on:click="login()">Login</button>
+                    <button type="button" v-on:click="login()">Entrar</button>
                 </div>
             </form>
         </div>

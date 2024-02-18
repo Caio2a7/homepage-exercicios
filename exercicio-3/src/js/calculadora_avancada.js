@@ -9,7 +9,7 @@ function estilizarReprovado(resultadoBox, textResult, resultado){
     textResult.innerText = `${resultado.toFixed(2)} Abaixo da nota mínima.`;
 }
 /*Função para calcular a média ponderada da nota de corte dos TRIs*/ 
-function media_ponderada() {
+export function media_ponderada() {
     // Atribuição utilizando métodos funcionais
     const triId = ['linguagens', 'exatas', 'humanas', 'naturezas', 'redacao'];
     const pesosValores = triId.map(id => Number(document.getElementById(`peso-${id}`).value));
@@ -30,6 +30,6 @@ function media_ponderada() {
     } else {
         resultadoBox.classList.remove('incorrect');
         resultadoBox.classList.remove('correct');
-        alert("Preencha ao menos um campo.");
+        alert("Preencha os campos corretamente.");
     }
 }
