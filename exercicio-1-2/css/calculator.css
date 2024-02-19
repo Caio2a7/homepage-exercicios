@@ -5,6 +5,8 @@
     padding: -2%;
     margin: 1%;
     height: 60%;
+
+    width: 100%;
 }
 .calculator-text{
     background-color: rgb(26, 20, 20, 0.4);
@@ -13,7 +15,7 @@
     padding: 2%;
     font-size: 15px;
     height: 70%;
-    width: 90%;
+    width: 96%;
 }
 
 .calculator-box form {

@@ -8,7 +8,7 @@
                 <nav>
                     <ul class="nav-items">
                         <div id="nav">
-                            <router-link class='nav-route' to="/">Home</router-link>
+                            <router-link class='nav-route' to="/">Início</router-link>
                             <router-link class='nav-route' to="/forum">Fórum</router-link>
                             <router-link class='nav-route' to="/contato">Contato</router-link>
                             <router-link class='nav-route' to="/sobre">Sobre</router-link>

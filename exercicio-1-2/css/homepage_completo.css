@@ -23,6 +23,7 @@ hr {
 }
 .bcc-header-container header{
     display: flex;
+    align-items: center;
     background-color: #183672;
 }
 .header-logo{
@@ -35,7 +36,7 @@ hr {
     position: relative;
     display: block;
     justify-content: flex-start;
-    margin: 0 30px;
+    margin-left: 30px;
     height: 100%;
 }
 .header-nav h1{
@@ -53,17 +54,23 @@ hr {
     top: 1px;
 }
 
-.nav-items li{
+.nav-link {
     display: flex;
     align-items: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /*ESTILOS MAIN*/
 .bcc-main-content{
     padding: 20px;
     background: url("../assets/img/imagem_de_fundo.png");
+}
+.sec-main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0%;
 }
 .sec-main-content{
     display: flex;
@@ -124,7 +131,7 @@ hr {
     transition: 0.3s all ease-in-out;
     transform: scale(1.10);
 }
-.nav-items li a:hover, .nav-route:hover{
+.nav-items li a:hover, .nav-route:hover, .nav-mobile-link:hover{
     color: #8aa9e7;
 }
 .calculator-box button:hover{
@@ -135,6 +142,54 @@ hr {
 .calculator-box button:active{
     background-color: #0070e7;
 }
+/*Navbar Mobile*/
+.mobile-nav {
+    display: none;
+    justify-content: end;
+    position: relative;
+    margin-right: 20px;
+}
+
+#mobile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    transition: width 1s ease-in-out;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background-color: #0b1d41;
+    z-index: 1000;
+    padding: 0px 40px 0 40px;
+}
+
+.nav-dropdown.open {
+    display: block;
+    width: 200px;
+}
+
+.mobile-nav-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-items li {
+    padding: 1px;
+}
+.nav-mobile-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
 /* Media Querys para telas de laptop */
 @media screen and (max-width: 1024px) {
     .content-card, .calculator-card{
@@ -152,7 +207,7 @@ hr {
     }
     .calculator-text{
         height: auto;
-        width: auto;
+        width: 100%;
     }
 }
 @media screen and (max-width: 929px){
@@ -160,7 +215,7 @@ hr {
         font-size: 27px;
     }
     .nav-items{
-        top: 1px;
+        top: 2px;
     }
 }
 /* Media Querys para telas de Tablets */
@@ -173,7 +228,7 @@ hr {
         font-size: 21px;
     }
     .nav-items{
-        top: 6px;
+        top: 1px;
     }
     .nav-items li{
         font-size: 14px;
@@ -185,6 +240,9 @@ hr {
 }
 /* Media Querys para telas de smartphone */
 @media screen and (max-width:665px){
+    .mobile-nav{
+        display: block;
+    }
     .header-logo img{
         width: 85px;
         height: 80px;
