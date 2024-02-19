@@ -58,6 +58,7 @@ hr {
     display: flex;
     align-items: center;
     padding: 10px;
+    padding-right: 13px;
     font-size: 20px;
 }
 
@@ -157,7 +158,6 @@ hr {
 }
 
 .nav-dropdown {
-    transition: width 1s ease-in-out;
     display: none;
     position: absolute;
     top: 100%;
@@ -169,7 +169,6 @@ hr {
 
 .nav-dropdown.open {
     display: block;
-    width: 200px;
 }
 
 .mobile-nav-items {
@@ -184,7 +183,7 @@ hr {
 .nav-mobile-link {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 8px 0px 8px 0px;
     font-size: 18px;
 }
 
@@ -245,7 +244,7 @@ hr {
     }
     .header-logo img{
         width: 85px;
-        height: 80px;
+        height: 89px;
     }
     .nav-items{
         display: none;
@@ -274,5 +273,8 @@ hr {
         align-self: center;
         margin-left: 0;
         font-size: 22px;
+    }
+    .mobile-nav {
+        margin-right: 6px;
     }
 }
