@@ -43,5 +43,18 @@ function moveFollower(event) {
     follower.style.top = offsetY + 'px';
     
     console.log('Mouse X:', offsetX, 'Mouse Y:', offsetY);
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            follower.style.display = 'none';
+            return; // Interrompe a execução da função moveFollower
+        }
+    });
 }
-//console.log(event);
+
+// Função follow
+function follow() {
+    document.getElementById('container').addEventListener('mousemove', moveFollower);
+}
+
+follow(); // Inicia o seguimento do mouse
