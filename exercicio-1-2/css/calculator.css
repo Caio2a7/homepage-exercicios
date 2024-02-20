@@ -87,7 +87,9 @@
 }
 
 .incorrect{
-    background-color: rgb(172, 56, 56);;
+    background-color: rgb(172, 56, 56);
+    width: 340px;
+    font-size: 16px;
 }
 .correct{
     background-color: rgb(46, 116, 69);

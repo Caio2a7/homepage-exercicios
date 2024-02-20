@@ -114,6 +114,7 @@ hr {
     font-size: 14px;
     text-align: center;
 }
+
 /* Estilos Footer*/
 .bcc-footer-conteiner footer{
     display: flex;
@@ -126,6 +127,7 @@ hr {
     border: none;
     margin: 20px;
 }
+
 /* Pseudoseletores */
 .nav-items li:hover, .nav-route:hover{
     animation-duration: 0.2s;

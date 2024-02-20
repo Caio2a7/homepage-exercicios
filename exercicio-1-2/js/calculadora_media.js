@@ -21,8 +21,8 @@ function media_ponderada(){
     // Cálculo da média ponderada das notas de corte dos TRIs
     let textResult = document.getElementById("calc-result");
     
-    let result = ((tri1 * pesos['peso-linguagens']) + 
-    (tri2 * pesos['peso-exatas']) + (tri3 * pesos['peso-humanas']) + 
+    let result = 
+    ((tri1 * pesos['peso-linguagens']) + (tri2 * pesos['peso-exatas']) + (tri3 * pesos['peso-humanas']) + 
     (tri4 * pesos['peso-naturezas']) + (tri5 * pesos['peso-redacao'])) / somaPesos;
 
     result = isNaN(result) ? 0 : result;

@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/homepage_completo.css" rel="stylesheet">
     <link href="css/calculator.css" rel="stylesheet">
-    <script src="js/calculadora_avancada.js" defer></script>
+    <link href="css/dropdown.css" rel="stylesheet">
+    <script src="js/calculadora_simples.js" defer></script>
     <script src="js/mobile_nav.js" defer></script>
 </head>
 <body>
     <div class="bcc-header-container">
         <header>
             <div class="header-logo">
-                <img src="assets/img/brasao_negativo.png" alt="brasão ufrn" width="90px" height="85px">
+                <img src="assets/img/brasao_negativo.png" alt="brasão ufrn" width="90px" height="90px">
             </div>
             <div class="header-nav">
                 <h1><b>UFRN - Bacharelado em Ciências da Computação</b></h1>
@@ -24,10 +25,19 @@
                         <li><a class="nav-link" href="#">Fórum</a></li>
                         <li><a class="nav-link" href="#">Contato</a></li>
                         <li><a class="nav-link" href="#">Sobre</a></li>
-                        <li><a class="nav-link" href="https://www.dimap.ufrn.br">DIMAP</a></li>
-                        <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
-                        <li><a class="nav-link" href="https://www.metropoledigital.ufrn.br/portal/">IMD</a></li>
+                    <button id="dropdown-toggle" type="button">
+                        <li><a class="nav-link" href="#">Instituições
+                            <svg id="drop-arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6z"/></svg>
+                        </a></li>
+                    </button>
                     </ul>
+                    <div id="dropdown" class="dropdown-content">
+                        <ul class="nav-items">
+                            <li><a class="nav-link" href="https://www.dimap.ufrn.br">DIMAP</a></li>
+                            <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
+                            <li><a class="nav-link" href="https://www.metropoledigital.ufrn.br/portal/">IMD</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div class="mobile-nav">
@@ -52,9 +62,10 @@
         </header>
         <hr>
     </div>
-    <div class="bcc-main-content">
+    <div class="bcc-main-content" id="container" onmousemove="moveFollower(event)">
         <main>
             <section class="sec-main-content">
+                <div id="follower"></div>
                 <h2><b>Apresentação e História</b></h2>
                 <div class="content-card">
                     <div class="content-text">
@@ -93,8 +104,8 @@
                                 <div class="form-row">
                                     <label for="linguagens-input">Linguagens, Códigos e suas Tecnologias: </label>
                                     <input id="linguagens-input" type="number" placeholder="TRI">
-                                    <input id="peso-linguagens" type="number" placeholder="PESO"><br><br>
-                                </div>
+                                    <input id="peso-linguagens" oninput="this.value = this.value.replace(/[^0-9]/g, '');" type="number" placeholder="PESO"><br><br>
+                                </div> 
                                 <div class="form-row">
                                     <label for="exatas-input">Matemática e suas Tecnologias: </label>
                                     <input id="exatas-input" type="number" placeholder="TRI">
