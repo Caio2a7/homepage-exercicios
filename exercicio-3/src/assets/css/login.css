@@ -11,10 +11,9 @@
     position: relative;
     bottom: 40px;
     justify-content: center;
-    margin: 5%;
+    margin: 7%;
     width: 40%;
 }
-
 #login form {
     background-color: #113272;
     display: block;
@@ -66,4 +65,10 @@
 }
 #login button:active{
     background-color: #0070e7;
+}
+@media screen and(max-width: 1024px){
+    #login{
+        width: 60%;
+        padding: 60%;
+    }
 }
