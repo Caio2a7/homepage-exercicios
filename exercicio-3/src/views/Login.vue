@@ -29,11 +29,8 @@ export default {
   methods: {
     login() {
       if (this.input.username !== "" && this.input.password !== "") {
-        // Esta parte deve ser uma chamada de API, não apenas uma verificação local
         if (this.input.username === this.$parent.mockAccount.username && this.input.password === this.$parent.mockAccount.password) {
           this.$emit("authenticated", true);
-          // Emitindo o evento diretamente para o componente Home.vue
-          this.$bus.$emit("username", this.input.username);
           this.$router.replace({ name: "Profile" });
         } else {
           alert("Username ou senha incorreta");

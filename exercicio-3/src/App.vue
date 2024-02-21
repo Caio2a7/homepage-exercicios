@@ -16,7 +16,8 @@
                             <li><a class="nav-link" href="https://petcc.dimap.ufrn.br">PETCC</a></li>
                             </div>
                             <div class="nav-login">
-                                    <router-link id='log' class='nav-route' v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+                                    <router-link id='log' class='nav-route' v-if="authenticated" to="/perfil">Perfil</router-link>
+                                    <router-link id='log' class='nav-route' v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Sair</router-link>
                                     <router-link id='log' class='nav-route' v-else to="/login">Login</router-link>
                             </div>
                     </ul>
@@ -38,7 +39,9 @@ import HeaderLogo from "./components/HeaderLogo.vue";
             authenticated: false,
             mockAccount: {
                 username: "petcc",
-                password: "123"
+                password: "123",
+                role: 'admin',
+                email: 'ufrnadmin@dimap.ufrn.br'
             }
         };
     },

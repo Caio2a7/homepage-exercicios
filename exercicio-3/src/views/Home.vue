@@ -152,17 +152,8 @@ export default {
   methods: {
     media() {
       media_ponderada();
-      console.log(this.username);
     }
   },
-  created() {
-    this.$bus.$on("username", (username) => {
-      this.username = username; 
-    });
-  },
-  beforeDestroy() {
-    this.$bus.$off("username");
-  }
 }
 </script>
 

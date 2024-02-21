@@ -3,16 +3,27 @@
       <div class="bcc-main-content">
         <main>
             <section class="sec-main-content">
-                <h2><b>Perfil</b></h2>
-                <div class="content-card">
-                    <div class="content-text">
-                        <p>O curso de Introdução ao desenvolvimento Web com HTML, CSS e JavaScript consiste na apresentação das características, funcionalidades e aplicações destas linguagens, em nível básico, visando facilitar a iniciação dos alunos ao desenvolvimento de aplicações web. 
-                          <br><br>O curso terá vinte horas de duração, divididas em cinco encontros com quatro horas cada. Em cada um dos primeiros quatro encontros, cerca de três horas serão dedicadas à realização de exercícios práticos, objetivando o desenvolvimento de uma aplicação web plenamente funcional. No quinto encontro, os alunos deverão implementar os próprios projetos, acompanhados pelos organizadores do curso, com base no conhecimento adquirido nos dias anteriores. Os alunos serão avaliados com base na sua aptidão em concluir as referidas atividades e no projeto final.
-                        </p> 
+                <div class="container">
+                    <h1>Perfil do Usuário</h1>
+                    <div class="profile-info">
+                        <div class="profile-row">
+                            <h3>Nome:</h3>
+                            <p>{{ $parent.mockAccount.username }}</p>
+                        </div>
+                        <div class="profile-row">
+                            <h3>Email:</h3>
+                            <p>{{ $parent.mockAccount.email  }}</p>
+                        </div>
+                        <div class="profile-row">
+                            <h3>Senha:</h3>
+                            <p>{{ $parent.mockAccount.password }}</p>
+                        </div>
+                        <div class="profile-row">
+                            <h3>Encargo:</h3>
+                            <p>{{ $parent.mockAccount.role  }}</p>
+                        </div>
                     </div>
-                    <hr>
                 </div>
-                
             </section>
         </main>
     </div>
@@ -33,17 +44,61 @@
 
 
 <script>
-    export default {
-        name: 'Profile',
-        data() {
-          return {}
-        },
-        mounted() {
-            if(!this.$parent.authenticated) {
-                this.$router.replace({ name: "Login" });
-            }
-        },
-        methods: {
+export default {
+    name: 'Profile',
+    mounted() {
+        if (!this.$parent.authenticated) {
+            this.$router.replace({ name: "Login" });
         }
     }
+}
 </script>
+
+<style scoped>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 1px solid white;
+    width: 40%;
+    margin: 20px auto;
+    background-color: #183672;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    background: linear-gradient(45deg, #163e8f, #0b1d41);
+    padding: 10px 0;
+    border-radius: 20px 20px 0px 0px;
+}
+.profile-info {
+    margin-top: 10px;
+    padding: 20px;
+}
+.profile-row {
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profile-row h3 {
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+}
+.profile-row p {
+
+    font-size: 19px;
+    flex: 1;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+}
+</style>
